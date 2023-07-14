@@ -1,0 +1,1197 @@
+{
+	"_": {
+		"postman_id": "58f06ce0-2b0b-4eee-83b2-1165c399599f"
+	},
+	"info": {
+		"_postman_id": "58f06ce0-2b0b-4eee-83b2-1165c399599f",
+		"name": "GLAIR Vision API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "eKYC",
+			"item": [
+				{
+					"name": "OCR",
+					"item": [
+						{
+							"name": "OCR - KTP",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the KTP. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/ktp",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"ktp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - NPWP",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the NPWP. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/npwp",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"npwp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - KK",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the KK. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/kk",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"kk"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - STNK",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the STNK. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/stnk",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"stnk"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - BPKB",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the BPKB. (.png, .jpg, .jpeg, .tiff, .pdf)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/bpkb",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"bpkb"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Passport",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Passport. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/passport",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"passport"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - License Plate",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Plate. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/plate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"plate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Face Biometric",
+					"item": [
+						{
+							"name": "Face Biometric - Face Matching",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"captured_image\": \"string_base64_of_captured_image_without_extension_prefix_eg_iVBORw0K...\",\n    \"stored_image\": \"string_base64_of_stored_image_without_extension_prefix_eg_iVBORw0K...\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/face/v1/match",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"face",
+										"v1",
+										"match"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Face Biometric - Passive Liveness",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file to be detected. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "gesture-code",
+											"value": "<String>",
+											"description": "(Required) What gesture code to check. (e.g HAND_00000 or HEAD_00) (full list of gesture code : https://docs.glair.ai/active-liveness)",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/face/v1/passive-liveness",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"face",
+										"v1",
+										"passive-liveness"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Face Biometric - Active Liveness",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file to be detected. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/face/v1/active-liveness",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"face",
+										"v1",
+										"active-liveness"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Prebult Web Page Session",
+					"item": [
+						{
+							"name": "Passive Liveness Session",
+							"item": [
+								{
+									"name": "PWP - Create Passive Liveness Session",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{baseUrl}}/face/v1/passive-liveness-session",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"face",
+												"v1",
+												"passive-liveness-session"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PWP - Retrieve Passive Liveness Session",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{baseUrl}}/face/v1/passive-liveness-session/:sid",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"face",
+												"v1",
+												"passive-liveness-session",
+												":sid"
+											],
+											"variable": [
+												{
+													"key": "sid",
+													"value": "<String>",
+													"description": "(Required) The session ID you want to retrieve."
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Active Liveness Session",
+							"item": [
+								{
+									"name": "PWP - Create Active Liveness Session",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{baseUrl}}/face/v1/active-liveness-session",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"face",
+												"v1",
+												"active-liveness-session"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PWP - Retrieve Active Liveness Session",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{baseUrl}}/face/v1/active-liveness-session/:sid",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"face",
+												"v1",
+												"active-liveness-session",
+												":sid"
+											],
+											"variable": [
+												{
+													"key": "sid",
+													"value": "<String>",
+													"description": "(Required) The session ID you want to retrieve."
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "KTP Session",
+							"item": [
+								{
+									"name": "PWP - Create KTP Session",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{baseUrl}}/ocr/v1/ktp-session",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ocr",
+												"v1",
+												"ktp-session"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PWP - Retrieve KTP Session",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{baseUrl}}/ocr/v1/ktp-session/:sid",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ocr",
+												"v1",
+												"ktp-session",
+												":sid"
+											],
+											"variable": [
+												{
+													"key": "sid",
+													"value": "<String>",
+													"description": "(Required) The session ID you want to retrieve."
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "NPWP Session",
+							"item": [
+								{
+									"name": "PWP - Create NPWP Session",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{baseUrl}}/ocr/v1/npwp-session",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ocr",
+												"v1",
+												"npwp-session"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PWP - Retrieve NPWP Session",
+									"event": [
+										{
+											"listen": "prerequest",
+											"script": {
+												"exec": [
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{baseUrl}}/ocr/v1/npwp-session/:sid",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"ocr",
+												"v1",
+												"npwp-session",
+												":sid"
+											],
+											"variable": [
+												{
+													"key": "sid",
+													"value": "<String>",
+													"description": "(Required) The session ID you want to retrieve."
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Identity",
+					"item": [
+						{
+							"name": "Identity - Basic Verification",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nik",
+											"value": "<String>",
+											"description": "(Required) The NIK field in KTP.",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "<String>",
+											"description": "(Required) The Nama field in KTP.",
+											"type": "text"
+										},
+										{
+											"key": "date_of_birth",
+											"value": "<String>",
+											"description": "(Required) The Tanggal Lahir field in KTP with dd-mm-yyyy format.",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/identity/v1/verification",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"identity",
+										"v1",
+										"verification"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Identity - Face Verification",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nik",
+											"value": "",
+											"description": "(Required) The NIK field in KTP.",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"description": "(Required) The Nama field in KTP.",
+											"type": "text"
+										},
+										{
+											"key": "date_of_birth",
+											"value": "",
+											"description": "(Required) The Tanggal Lahir field in KTP with dd-mm-yyyy format.",
+											"type": "text"
+										},
+										{
+											"key": "face_image",
+											"value": "",
+											"description": "(Required) The face image of KTP owner. (.png, .jpg, .jpeg)",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/identity/v1/face-verification",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"identity",
+										"v1",
+										"face-verification"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Paperless",
+			"item": [
+				{
+					"name": "OCR",
+					"item": [
+						{
+							"name": "OCR - General Document",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the General Document. (.png, .jpg, .jpeg, .pdf)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/general-document",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"general-document"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Invoice",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Invoice. (.png, .jpg, .jpeg, .pdf)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/invoice",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"invoice"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Receipt",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Receipt. (.png, .jpg, .jpeg, .pdf)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/receipt",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"receipt"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Bank Statement",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Bank Statement. (.png, .jpg, .jpeg, .pdf)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/bank-statement",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"bank-statement"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Balance Sheet",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Balance Sheet. (.png, .jpg, .jpeg, .pdf)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/balance-sheet",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"balance-sheet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Income Statement",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Income Statement. (.png, .jpg, .jpeg, .pdf)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/income-statement",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"income-statement"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.request.headers.upsert({key:\"x-api-key\",value:pm.variables.get(\"api_key\")});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.vision.glair.ai",
+			"type": "string"
+		}
+	]
+}
