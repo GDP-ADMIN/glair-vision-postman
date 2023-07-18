@@ -1,10 +1,11 @@
 {
 	"_": {
-		"postman_id": "58f06ce0-2b0b-4eee-83b2-1165c399599f"
+		"postman_id": "6c7a102e-75ab-43a6-b7b3-04a55cc9927c"
 	},
 	"info": {
-		"_postman_id": "58f06ce0-2b0b-4eee-83b2-1165c399599f",
+		"_postman_id": "6c7a102e-75ab-43a6-b7b3-04a55cc9927c",
 		"name": "GLAIR Vision API",
+		"description": "# GLAIR Vision API Postman Collection\n\nThis is a Postman collection covering the GLAIR Vision API. Please refer to [https://docs.glair.ai](https://docs.glair.ai) for more details.\n\n## Requirements\n\n- [Postman](https://www.getpostman.com/downloads/)\n- [Glair Vision Account](mailto:hi@glair.ai)\n    \n\n## Getting Started\n\n1. Download and install Postman from [here](https://www.postman.com/downloads/).\n2. Once successfully installed, import both the [GlairVisionAPICollection.json](https://github.com/glair-ai-shadow/glair-vision-postman/blob/main/GLAIRVisionAPICollection.json) and [GlairVisionEnvironment.json](https://github.com/glair-ai-shadow/glair-vision-postman/blob/main/GLAIRVisionEnvironment.json) into your Postman workspace.\n3. Set your GLAIR Vision Account `username`, `password`, and `api_key` in the [environment variables](https://learning.postman.com/docs/sending-requests/variables/). Make sure to save the changes.\n    \n    <img src=\"./screenshots/set_environment_variable.png\" alt=\"\">\n    \n4. Select the environment variable as active in the workspace.\n    \n    <img src=\"./screenshots/set_environment_as_active.png\" alt=\"\">\n    \n5. You should now be ready to make requests. You can test sending a request by choosing one of the requests in the Collections.\n    \n    <img src=\"./screenshots/list_collections.png\" alt=\"\">\n    \n    Add the required **parameters** and click send.\n    \n    <img src=\"./screenshots/send_request.png\" alt=\"\">\n    \n    If the request is successful, you should see the response in the **body** section and receive a status code **200 OK**.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -1185,13 +1186,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "baseUrl",
-			"value": "https://api.vision.glair.ai",
-			"type": "string"
 		}
 	]
 }

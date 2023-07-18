@@ -1,5 +1,5 @@
 {
-	"id": "1fdb926f-a022-4813-8420-97c70b2148f2",
+	"id": "9ced4896-ca87-43a9-be02-d7aa82d7d5fe",
 	"name": "GLAIR Vision Environment",
 	"values": [
 		{
@@ -17,6 +17,12 @@
 		{
 			"key": "api_key",
 			"value": "<replace with your GLAIR Vision API Key>",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://api.vision.glair.ai",
 			"type": "default",
 			"enabled": true
 		}
