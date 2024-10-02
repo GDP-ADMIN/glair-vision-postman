@@ -298,6 +298,211 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "OCR - SIM",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Plate. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/sim",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"sim"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Singapore NRIC",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Plate. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/singapore-nric",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"singapore-nric"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Singapore Family Pass",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Plate. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/singapore-family-pass",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"singapore-family-pass"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - Singapore Work Permit",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Plate. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/singapore-work-permit",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"singapore-work-permit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OCR - KITAS KITAP",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"description": "(Required) The image file for the Plate. (.png, .jpg, .jpeg)",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/ocr/v1/kitas-kitap",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"ocr",
+										"v1",
+										"kitas-kitap"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
